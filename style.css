@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(244, 139, 211);
+    color: white;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navlink{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.navlink{
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navlink:hover{
+    background-color: rgba(255, 255, 255, 0.164);
+}
+
+.judul{
+    font-size: 25px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 80px 100px;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.hero-details {
+    flex: 1;
+}
+
+.hero-details .title {
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: rgb(244, 139, 211);
+}
+
+.hero-details .subtitle {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.hero-details .description {
+    font-size: 17px;
+}
+
+
+.hero-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+.button-about {
+    padding: 12px 25px;
+    background-color: rgb(244, 139, 211);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.button-about:hover {
+    background-color: #d63384;
+    transform: translateY(-3px);
+}
+
+.button-instagram {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 139, 211);
+    color: white;
+    border-radius: 20px;
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+.button-instagram:hover {
+    background-color: #d63384;
+    transform: translateY(-3px);
+}
+
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    padding-right: 20px;
+    padding-left: 130px;
+}
+
+
+/* About Me */
+.about-section {
+    padding: 100px 50px;
+    text-align: center;
+    background-color: #ffffca;
+    border-radius: 20px;
+}
+
+.about-section h1 {
+    font-size: 50px;
+    color: #d63384;
+    margin-bottom: 25px;
+}
+
+.about-content {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+
+/* Achievement Section */
+.achievement-section {
+    padding: 80px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.achievement-section h1 {
+    font-size: 35px;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.achievement-description {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* dari ai */
+.achievement-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 25px;
+}
+
+.achievement-card {
+    background-color: rgb(244, 139, 211);
+    width: 220px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(152, 34, 107, 0.925);
+    transition: transform 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.achievement-card h3 {
+    color: white;
+}
+
+
+/* My Goals */
+.goals-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffca;
+    border-radius: 20px;
+}
+
+.goals-section h1 {
+    font-size: 35px;
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.goals-description {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.goal-card {
+    background-color: rgb(244, 139, 211);
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(130, 35, 92, 0.678);
+    transition: transform 0.3s;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+}
+
+.goal-card h3 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.goal-card p {
+    color: white;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* Footer */
+footer {
+    padding: 20px;
+    color: white;
+    background-color:  rgb(244, 139, 211);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Responsive */
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .hero-section {
+        padding: 50px 30px;
+    }
+
+    .hero-section .section-content {
+        gap: 10px;
+    }
+
+    .hero-details .title {
+        font-size: 40px;
+    }
+
+    .hero-details .subtitle {
+        font-size: 20px;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+        padding: 0;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .achievement-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .goals-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Handphone */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .judul {
+        font-size: 20px;
+    }
+
+    .navlink {
+        gap: 15px;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    .hero-section {
+        padding: 80px 20px;
+    }
+
+    .hero-section .section-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-details .title {
+        font-size: 35px;
+    }
+
+    .hero-details .subtitle {
+        font-size: 20px;
+    }
+
+    .hero-details .description {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        width: 250px;
+        height: 250px;
+        padding: 0;
+    }
+
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .about-section h1 {
+        font-size: 35px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .achievement-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .goals-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goal-card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+}
+
+
